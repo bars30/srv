@@ -10,6 +10,8 @@ app.use('/api', userRouter)
 
 app.listen(PORT, ()=>{
  console.log('Server has started on port -> ' + PORT);
+ res.send(prpcess.env.PORT)
+ res.send(456545)
 })
 
 app.get('/api/text2', (req, res)=>{
